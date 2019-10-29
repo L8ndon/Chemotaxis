@@ -1,6 +1,7 @@
 PImage stonks;  
 PImage stonksAcquired;
 Bacteria bruh = new Bacteria();
+Bacteria boi = new Bacteria();
  void setup()   
  {     
  	 background(255, 255, 255);
@@ -13,6 +14,8 @@ Bacteria bruh = new Bacteria();
  {    
   bruh.walk();
   bruh.show();
+  boi.show();
+  boi.walk2();
   fill(0);
   textSize(40);
   text("Stonks.", 220, 75); 
@@ -38,12 +41,17 @@ Bacteria bruh = new Bacteria();
     //myX = myX + (int)(Math.random() * 3) - 1;
     //myY = myY + (int)(Math.random() * 3) - 1;
      textSize(25);
-    if(myX == 450 && myY == 450)
+    if(myX == 400 && myY == 200)
     text("Stonks acquired.", 200, 400);
   }
   void show()
   {
     image(stonks, myX, myY, 50, 50);
-    image(stonksAcquired, 450, 450, 50, 50);
+    image(stonksAcquired, 400, 200, 50, 50);
+  }
+  void walk2()
+  {
+    myX = myX + (int)(Math.random() * 3) - 1;
+    myY = myY + (int)(Math.random() * 3) - 1;
   }
  }    
