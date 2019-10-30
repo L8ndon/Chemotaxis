@@ -45,8 +45,8 @@ Bacteria[] bruh = new Bacteria[3];
     //myX = myX + (int)(Math.random() * 3) - 1;
     //myY = myY + (int)(Math.random() * 3) - 1;
      textSize(25);
-    if(myX == 400 && myY == 200)
-    text("Stonks acquired.", 500, 400);
+    if(myX == 500 && myY == 400)
+    text("Stonks acquired.", 250, 500);
   }
   void show()
   {
